@@ -1,0 +1,76 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect
+    x="36"
+    y="36"
+    width="440"
+    height="440"
+    rx="100"
+    fill="#0F172A"
+    stroke="url(#gradient)"
+    stroke-width="6"
+  />
+
+  <!-- Glow Circle -->
+  <circle
+    cx="256"
+    cy="256"
+    r="140"
+    fill="url(#gradient)"
+    opacity="0.08"
+    filter="url(#glow)"
+  />
+
+  <!-- Letter S -->
+  <path
+    d="
+    M170 185
+    C170 145 202 120 250 120
+    C296 120 330 142 340 178
+    H300
+    C294 160 278 152 252 152
+    C226 152 212 163 212 180
+    C212 198 228 206 262 214
+    C320 228 348 252 348 296
+    C348 342 312 372 252 372
+    C194 372 156 342 148 294
+    H188
+    C196 320 214 336 252 336
+    C286 336 306 322 306 300
+    C306 278 288 268 246 258
+    C190 244 170 220 170 185
+    "
+    fill="url(#gradient)"
+  />
+
+  <!-- Letter L -->
+  <path
+    d="
+    M300 160
+    V352
+    H372
+    V320
+    H336
+    V160
+    Z
+    "
+    fill="white"
+  />
+
+</svg>
